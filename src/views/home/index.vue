@@ -47,7 +47,9 @@
                   <img src="../../../public/imgs/my_web.png" alt="" />
                 </div>
               </div>
-              <div class="link_text">开发文档</div>
+              <a href="https://github.com/asd494235908/DcPay" target="_blank"
+                ><div class="link_text">开发文档</div></a
+              >
             </div></a-col
           >
           <a-col
@@ -106,7 +108,7 @@
       ></a-col>
     </a-row>
     <div class="btn">
-      <a-button type="primary" shape="round" class="btn_laer">
+      <a-button type="primary" shape="round" class="btn_laer" @click="goScrolltop">
         <template #icon><DownOutlined /></template>
       </a-button>
     </div>
@@ -114,7 +116,7 @@
 </template>
 
 <script>
-import { reactive, toRefs } from "vue";
+import { nextTick, reactive, toRefs } from "vue";
 import { DownOutlined } from "@ant-design/icons-vue";
 export default {
   components: { DownOutlined },
@@ -122,9 +124,26 @@ export default {
     const state = reactive({
       count: 0,
     });
-
+    const goScrolltop = () => {
+      nextTick(() => {
+        //平滑设置滚动条
+        const top = document.querySelector(".warp");
+        let i = document.documentElement.scrollTop;
+        let timer = null;
+        timer = setInterval(() => {
+          i+=10;
+          if (i > top.offsetHeight) {
+            clearInterval(timer);
+            return;
+          } else {
+            document.documentElement.scrollTop = i;
+          }
+        }, 0);
+      });
+    };
     return {
       ...toRefs(state),
+      goScrolltop,
     };
   },
 };

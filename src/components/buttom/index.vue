@@ -52,7 +52,7 @@
           :xxl="{ span: 4, offset: 0 }"
           class="icon_warp"
           ><i class="iconfont home"><router-link to="/pay">&#xe61f;</router-link></i
-          ><i class="iconfont git"><a href="https:/www.dcmaomi.com">&#xe628;</a></i>
+          ><i class="iconfont git"><a href="https://github.com/asd494235908/DcPay" target="_blank">&#xe628;</a></i>
           <div class="qun">
             <i class="iconfont qq">&#xe629;</i>
             <div class="img">

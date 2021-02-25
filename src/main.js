@@ -35,46 +35,5 @@ axios.interceptors.request.use(config => {
 })
 app.config.globalProperties.$http = axios
 app.config.globalProperties.$dayjs = dayjs
-// // app.use(VueAxios, axios)
-// app.use(VueLazyLoad, {
-//     preLoad: 1.3,
-//     error: require('../public/static/img/logding.gif'),
-//     loading: require('../public/static/img/logding.gif'),
-//     // dispatchEvent: true,
-//     attempt: 1
-// })
-// router.beforeEach((to, from, next) => {
-//     // 每次进入一个页面之后都要发送请求查看是否为登陆状态
-//     axios.post('/api/validate', {}).then(res => {
-//         const data = res.data
-//         // console.log(data)
-//         if (data.success !== true) {
-//             // 用户要登录
-//             if (to.matched.some(res => res.meta.islogin)) {
-//                 // 用户未登录 需要跳转登录页面
-//                 next({
-//                     path: '/login',
-//                     query: {
-//                         redirect: to.fullPath
-//                     }
-//                 })
-//             } else {
-//                 next()
-//             }
-//         } else {
-//             //是登录状态的话保存用户信息
-//             store.commit('seveLogin', data.data)
-//             store.commit('modifyLogin', true)
-//             if (to.path === '/login') {
-//                 router.push({
-//                     path: '/',
-//                 })
-//             }
-//             next()
-//         }
-//     }).catch(err => {
-//         console.log(err)
-//     })
-// })
 app.use(store).use(router).mount('#app')
 

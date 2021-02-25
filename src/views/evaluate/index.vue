@@ -134,7 +134,10 @@
           详情点击下方链接查看.
         </p>
         <div class="evaluate_buttom_links">
-          <div class="github"><i class="iconfont">&#xe628;</i>Github</div>
+          <a href="https://github.com/asd494235908/DcPay" target="_blank"
+            ><div class="github"><i class="iconfont">&#xe628;</i>Github</div></a
+          >
+
           <div class="Gitee"><i class="iconfont">&#xe686;</i>Gitee</div>
         </div>
       </div>
@@ -223,7 +226,6 @@ export default {
           font-size: 32px;
           margin: 0 10px;
           color: $cf;
-          
         }
       }
       .github {
@@ -237,7 +239,7 @@ export default {
     bottom: -80px;
     width: 600px;
     height: 400px;
-    background: url('../../../public/imgs/pay_home_4.png') no-repeat top center;
+    background: url("../../../public/imgs/pay_home_4.png") no-repeat top center;
     background-size: cover;
   }
 }

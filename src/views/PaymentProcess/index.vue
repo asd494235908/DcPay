@@ -56,7 +56,7 @@
         <a-row type="flex" align="middle" justify="center" class="pay_item">
           <a-col
             :xs="{ span: 24, order: 2 }"
-            :sm="{ span: 24 ,order: 1}"
+            :sm="{ span: 24, order: 1 }"
             :lg="{ span: 12 }"
             :md="{ span: 12 }"
             :xl="{ span: 12 }"
@@ -70,8 +70,8 @@
             <p class="item_p">配置个人的各渠道收款二维码， 支付即时到账</p>
           </a-col>
           <a-col
-            :xs="{ span: 24 ,order: 1}"
-            :sm="{ span: 24 ,order: 2}"
+            :xs="{ span: 24, order: 1 }"
+            :sm="{ span: 24, order: 2 }"
             :lg="{ span: 12 }"
             :md="{ span: 12 }"
             :xl="{ span: 12 }"
@@ -124,7 +124,6 @@
     >
     </a-col>
   </a-row>
-  
 </template>
 
 <script>
@@ -174,7 +173,7 @@ export default {
         font-weight: bold;
         position: absolute;
         top: 120px;
-
+        user-select: none;
         writing-mode: tb-rl;
         letter-spacing: 40px;
         // z-index: -1;
