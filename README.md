@@ -2,7 +2,7 @@
 [![](https://img.shields.io/badge/version-1.0-brightgreen)](https://github.com/asd494235908/DcPay)
 [![GitHub stars](https://img.shields.io/github/stars/asd494235908/DcPay.svg?style=social&label=Stars)](https://github.com/asd494235908/DcPay)
 [![GitHub forks](https://img.shields.io/github/forks/asd494235908/DcPay.svg?style=social&label=Fork)](https://github.com/asd494235908/DcPay)
- - [若图片显示不完整请跳转码云](https://gitee.com/dcmaomi/Dm)
+ - [若图片显示不完整请跳转码云](https://gitee.com/dcmaomi/DcPay)
 ### 项目已部署，在线Demo
 - Dcpay前台：https://dcpay.dcmaomi.com
  [![WX20190924-234416@2x.png](https://www.dcmaomi.com:3010/serverImage/20210306141208_16064.png)](https://github.com/asd494235908/DcPay)
