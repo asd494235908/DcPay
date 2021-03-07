@@ -1,10 +1,11 @@
 # Dcpay个人收款支付系统
 [![](https://img.shields.io/badge/version-1.0-brightgreen)](https://github.com/asd494235908/DcPay)
-[![GitHub stars](https://img.shields.io/github/stars/asd494235908/DcPay.svg?style=social&label=Stars)](https://github.com/asd494235908/DM)
-[![GitHub forks](https://img.shields.io/github/forks/asd494235908/DcPay.svg?style=social&label=Fork)](https://github.com/asd494235908/Dm)
+[![GitHub stars](https://img.shields.io/github/stars/asd494235908/DcPay.svg?style=social&label=Stars)](https://github.com/asd494235908/DcPay)
+[![GitHub forks](https://img.shields.io/github/forks/asd494235908/DcPay.svg?style=social&label=Fork)](https://github.com/asd494235908/DcPay)
  - [若图片显示不完整请跳转码云](https://gitee.com/dcmaomi/Dm)
 ### 项目已部署，在线Demo
 - Dcpay前台：https://dcpay.dcmaomi.com
+ [![WX20190924-234416@2x.png](https://www.dcmaomi.com:3010/serverImage/20210306141208_16064.png)](https://github.com/asd494235908/DcPay)
 - 后台管理系统：https://tm.dcmaomi.com
 - Swagger接口文档：https://www.dcmaomi.com:3000/api/Swagger
 - 项目综合项目：https://www.dcmaomi.com
@@ -82,13 +83,7 @@
   - 为什么不做自动监听挂机App？
      - 迟早被封的为什么要做？...DcPay主要面向真正个人如学生群体，也目前成本最低最稳定的方案，免费!
      - 不想受限制、不想用APP监听、还想免费？请用我这套，哈哈
-### 前端所用技术 [后台](https://github.com/asd494235908/TerMinal) 
-- 后台页面
-    - [vue 2.x](https://cn.vuejs.org/)：vue全家桶
-    - [echarts](http://echarts.apache.org/zh/)：图表插件
-    - [Element](https://element.eleme.cn/#/zh-CN)：Element-UI 组件库
-    - 第三方接口
-    - [中国天气网](https://cj.weather.com.cn/plugin/standard)：中国天气网 天气插件
+### 前端所用技术
 - 前台页面
     - [vue 3.0](https://www.vue3js.cn/docs/zh/) + Vuex + Vue Router + ES6 + webpack + axios + Node.js
     - [Ant Desing vue](https://2x.antdv.com/docs/vue/introduce-cn/)：Ant Desing vue 组件库
