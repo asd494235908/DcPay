@@ -137,8 +137,9 @@
           <a href="https://github.com/asd494235908/DcPay" target="_blank"
             ><div class="github"><i class="iconfont">&#xe628;</i>Github</div></a
           >
-
-          <div class="Gitee"><i class="iconfont">&#xe686;</i>Gitee</div>
+          <a href="https://gitee.com/dcmaomi/DcPay" target="_blank"
+            ><div class="Gitee"><i class="iconfont">&#xe686;</i>Gitee</div></a
+          >
         </div>
       </div>
       <div class="evaluate_buttom_right"></div>
