@@ -91,7 +91,7 @@
 - 主要
    - [Node Js](https://nodejs.org/zh-cn/)：Node.js
    - [express](https://www.expressjs.com.cn/)：基于 Node.js 平台， Web 开发框架
-   - [mysql](https://www.mysql.com/)：基于 Node.js 平台， Web 开发框架
+   - [mysql](https://www.mysql.com/)：数据库
    - [Swagger2](https://www.dcmaomi.com:3000/api/swagger/#/)：Api文档生成
    - [svg-captcha](https://www.npmjs.com/package/svg-captcha)：登录验证码
    - [silly-datetime](https://www.npmjs.com/package/silly-datetime)：时间格式化工具
