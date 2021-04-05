@@ -114,7 +114,7 @@ export default {
         });
         Promise.all(imgesAll)
           .then(() => {
-            store.commit("seveMask", false);
+            store.commit("seveMask", true);
           })
           .catch(() => {
             store.commit("seveMask", true);
