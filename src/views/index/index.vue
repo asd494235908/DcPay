@@ -12,7 +12,61 @@
   </div>
   <div class="mask" :class="{ ismask: maske }">
     <div class="mask_content">
-      <img src="../../../public/imgs/5-160914192R6-50.gif" alt="" />
+      <svg
+        width="44"
+        height="44"
+        viewBox="0 0 44 44"
+        xmlns="http://www.w3.org/2000/svg"
+        stroke="#fff"
+        class="loding"
+      >
+        <g fill="none" fill-rule="evenodd" stroke-width="2">
+          <circle cx="22" cy="22" r="1">
+            <animate
+              attributeName="r"
+              begin="0s"
+              dur="1.8s"
+              values="1; 20"
+              calcMode="spline"
+              keyTimes="0; 1"
+              keySplines="0.165, 0.84, 0.44, 1"
+              repeatCount="indefinite"
+            />
+            <animate
+              attributeName="stroke-opacity"
+              begin="0s"
+              dur="1.8s"
+              values="1; 0"
+              calcMode="spline"
+              keyTimes="0; 1"
+              keySplines="0.3, 0.61, 0.355, 1"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle cx="22" cy="22" r="1">
+            <animate
+              attributeName="r"
+              begin="-0.9s"
+              dur="1.8s"
+              values="1; 20"
+              calcMode="spline"
+              keyTimes="0; 1"
+              keySplines="0.165, 0.84, 0.44, 1"
+              repeatCount="indefinite"
+            />
+            <animate
+              attributeName="stroke-opacity"
+              begin="-0.9s"
+              dur="1.8s"
+              values="1; 0"
+              calcMode="spline"
+              keyTimes="0; 1"
+              keySplines="0.3, 0.61, 0.355, 1"
+              repeatCount="indefinite"
+            />
+          </circle>
+        </g>
+      </svg>
     </div>
   </div>
 </template>
@@ -60,10 +114,10 @@ export default {
         });
         Promise.all(imgesAll)
           .then(() => {
-            store.commit("seveMask", true);
+            store.commit("seveMask", false);
           })
           .catch(() => {
-            // store.commit("seveMask", false);
+            store.commit("seveMask", true);
           });
       });
     });
@@ -94,6 +148,15 @@ export default {
   justify-content: center;
   opacity: 1;
   transition: all 0.3s ease-in-out;
+  .mask_content{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  .loding{
+    margin: 0 auto;
+  }
+}
 }
 .ismask {
   opacity: 0;
@@ -110,4 +173,5 @@ export default {
   padding-top: 60px;
   background: url("../../../public/imgs/bg_y.png") repeat-y top center;
 }
+
 </style>
